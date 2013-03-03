@@ -4,7 +4,7 @@ Este artículo proporciona una breve descripción de cada característica desarr
 
 Esta es una lista organizada alfabéticamente por el nombre de los módulos, en la que dos secciones
 principales separan los módulos que forman parte del núcleo y los que no.
-Las características principales no pueden ser desabilitadas y todas están siempre activadas,
+Las características principales no pueden ser deshabilitadas y todas están siempre activadas,
 pero hay características que están implementadas en módulos del núcleo que pueden activarse y desactivarse.
 Estas características simplemente no están en la categoría "Core".
 
@@ -171,8 +171,6 @@ Usando el part proporcionado por este módulo, puedes programar que un content i
 Este módulo está disponible desde los paquetes de código fuente o [desde la galería][28].
 
 ## Orchard.Autoroute (WebPI)
-
-Autoroute is built on top of the Alias feature.
 
 Esta poderosa funcionalidad hace posible que los creadores de tipos de contenido (content type) puedan especificar una arquitectura de enlaces basada en tokens.
 
