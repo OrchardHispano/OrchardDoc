@@ -197,32 +197,29 @@ El módulo CodeGeneration está disponible desde los paquetes de código fuente 
 
 Puedes usar el part Comments proporcionado por este módulo o cualquier otro content type para permitir a los usuarios de tu sitio web opinar y comentar el contenido.
 
-### See Also
+### Ver También
 
 * [Moderar comentarios][8]
 
-## Orchard.ContentPermissions (WebPI, off by default)
+## Orchard.ContentPermissions (WebPI, desactivado por defecto)
 
-Without this module, Orchard only provides configurable permissions for whole content types.
-This module provides a part that can be added to any content type to restrict viewing
-permissions per content item instead of per content type.
+Sin este módulo, Orchard solo proporciona permisos configurables para todos los content types. El módulo Orchard.ContentPermissions proporciona un part que puede ser añadido a cualquier tipo de contenido para restringir permisos de visualización por cada item de contenido en lugar de por el tipo de contenido.
 
 ## Orchard.ContentPicker
 
-This module provides an extensible content item picker that can be used to build
-relationships between content items.
+Este módulo proporciona un selector de items de contenidos extensible que puede usarse para construir relaciones entre content items.
 
-This module is available from source code packages or [from the gallery][30].
+El módulo ContentPicker está disponible desde los paquetes de código fuente o [desde la galería][30].
 
-## Orchard.ContentTypes (WebPI, off by default)
+## Orchard.ContentTypes (WebPI, desactivado por defecto)
 
-Enable this module to enable the creation and modification of content types from the admin UI.
+Activa este módulo para permitir la creación y modificación de tipos de contenido desde el panel de administración.
 
-### See Also
+### Ver También
 
-* [Creating custom content types][9]
+* [Crear tipos de contenido personalizados][9]
 
-## Orchard.CustomForms (WebPI, off by default)
+## Orchard.CustomForms (WebPI, desactivado por defecto)
 
 Custom forms are built as content types, typically using fields. Once you've built the content
 type for your custom form, you can enable its instances to be created from the front-end by
@@ -246,7 +243,7 @@ This module contains a few features that help with the development of themes.
 * URL Alternates: adds alternates for all shapes based on the current URL, of the form "someshape-url-thecurrenturl" or "someshape-url-homepage".
 * Widget Alternates: adds alternates for specific widgets and layers.
 
-### See Also:
+### Ver También:
 
 * [Customizing Orchard using designer helper tools][31]
 
@@ -311,7 +308,7 @@ This module is available from source code packages or [from the gallery][37].
 
 Orchard.Media manages the contents of the /media folder.
 
-### See Also
+### Ver También
 
 * [Adding and managing media content][10]
 
@@ -331,7 +328,7 @@ This module is available from source code packages or [from the gallery][39].
 
 This is the module that provides the admin UI to enable and disable features.
 
-### See Also
+### Ver También
 
 * [Installing and upgrading modules][11]
 
@@ -343,7 +340,7 @@ within a single IIS application, thus saving a lot of resources, and reducing ma
 costs. Each site's data is strictly segregated from the others through a table prefix
 or complete database separation.
 
-### See Also
+### Ver También
 
 * [Setting up a multi-tenant Orchard site][40]
 
@@ -359,7 +356,7 @@ This module handles the packaging of themes and modules.
 * Gallery: integrates the [gallery][1] into Orchard.
 * Package Updates: enables module updates from the admin dashboard.
 
-### See Also
+### Ver También
 
 * [Installing modules and themes from the gallery][12]
 
@@ -367,7 +364,7 @@ This module handles the packaging of themes and modules.
 
 The Pages modules adds the Page content type, and associated commands.
 
-### See Also
+### Ver También
 
 * [Adding pages to your site][13]
 
@@ -377,16 +374,16 @@ This tremendously useful module enables the creation of arbitrary queries over
 the contents of the site, and then to present the results in flexible layouts,
 without leaving the admin dashboard.
 
-### See Also
+### Ver También
 
 * [Presentation video on Projections][14]
 
-## Orchard.PublishLater (WebPI, off by default)
+## Orchard.PublishLater (WebPI, desactivado por defecto)
 
 The PublishLater part can be added to draftable content types and allows scheduled
 publication of contents.
 
-### See Also
+### Ver También
 
 * [Saving, scheduling and publishing drafts][15]
 
@@ -398,7 +395,7 @@ of the site. Recipes are used at setup to describe predefined initial configurat
 modules to specify additional operations that get executed after installation.
 Finally, the import/export feature uses this same recipe format to transfer contents.
 
-### See Also
+### Ver También
 
 * [Making a web site recipe][16]
 
@@ -409,12 +406,12 @@ and permissions, but we do ship role-based security as a default security implem
 Users can belong to one or many groups, and permissions are granted to groups rather than
 users.
 
-### See Also
+### Ver También
 
 * [Managing users and roles][17]
 * [Understanding permissions][18]
 
-## Orchard.Rules (WebPI, off by default)
+## Orchard.Rules (WebPI, desactivado por defecto)
 
 Orchard events can be picked up by rules and trigger actions. For example, the publication
 event on the comment content type can be picked-up by a user-defined rule and trigger
@@ -446,7 +443,7 @@ such as Ruby and Python as scripting languages.
 This module is always disabled except before the application has been setup. It is responsible
 for implementing the setup mechanism. It contains the original recipes in its Recipes subfolder.
 
-### See Also
+### Ver También
 
 * [Installing Orchard][20]
 * [Making a web site recipe][16]
@@ -457,7 +454,7 @@ Tags are a very simple way to categorize contents. It is a flat and easily exten
 For more elaborate classifications, we strongly recommend the use of the [Contrib.Taxonomies][21]
 module.
 
-### See Also
+### Ver También
 
 * [Organizing content with tags][22]
 
@@ -473,13 +470,13 @@ This module is available from source code packages or [from the gallery][42].
 This module provides the infrastructure for easy customization of the look and feel of the site
 through the definition of themes, which are a set of scripts, stylesheets and template overrides.
 
-### See Also
+### Ver También
 
 * [Installing themes][23]
 * [Previewing and applying a theme][24]
 * [Customizing the default theme][25]
 
-## Orchard.Tokens (WebPI, off by default)
+## Orchard.Tokens (WebPI, desactivado por defecto)
 
 Tokens are contextual environment variables that are used in dynamic expressions. For example,
 the Autoroute feature makes it possible to define URL patterns for content items of a given
@@ -491,11 +488,11 @@ it applies to and would be resolved to something like "2012/the-title".
 
 This is the module that implements the default user management in Orchard.
 
-### See Also
+### Ver También
 
 * [Managing users and roles][17]
 
-## Orchard.Warmup (WebPI, off by default)
+## Orchard.Warmup (WebPI, desactivado por defecto)
 
 Cold starts in ASP.NET applications can be slow, and shared hosting environments create the
 conditions for frequent such cold starts. In order to mitigate this situation, the warmup
@@ -513,7 +510,7 @@ get displayed on what pages is determined by layer rules.
 * Page Layer Hinting: adds a message when publishing a new page that prompts the user to create a new layer for that page.
 * Widget Control Wrapper: Adds an edit button on the front-end for easier modification.
 
-### See Also
+### Ver También
 
 * [Managing widgets][26]
 * [Writing a widget][27]
@@ -522,7 +519,7 @@ get displayed on what pages is determined by layer rules.
 
 Used as a dependency by other features, this provides the scripts necessary to implement the TinyMCE WYSYWYG HTML editor.
 
-## UpgradeTo15 / UpgradeTo14 (WebPI, off by default)
+## UpgradeTo15 / UpgradeTo14 (WebPI, desactivado por defecto)
 
 Orchard 1.4 brought breaking changes in the way URLs and titles are managed. 1.3 and previous versions
 were using the Route part to handle a static URL and title. 1.4 deprecated this in favor of the new
