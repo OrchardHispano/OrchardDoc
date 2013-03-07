@@ -1,17 +1,17 @@
-> This topic has been updated for the Orchard 1.1 release.
+>Este artículo ha sido actualizado cuando se ha liberado Orchard 1.1
 
-In Orchard, a _widget_ is a piece of reusable UI that can be arbitrarily positioned on the pages of a web site. Examples of widgets could include a tag cloud, a search form, or a Twitter feed. A widget is a content type, which enables you to reuse existing code and UI.
+En Orchard, un _widget_ es un trozo de interfaz de usuario reutilizable que puede ser arbitrariamente colocada en las páginas de un sitio web. Ejemplos de widgets podrían ser una nube de etiquetas, un buscador, o un feed de Twitter. Un widget es un Content Type, lo que le permite reutilizar el código y la interfaz de usuario.
 
-This article describes how to write a widget by first creating a content part and then turning that part into a widget.
+En este artículo se describe cómo escribir un widget creando primero un ContentPart y luego convertiéndolo en un widget.
 
-# Creating a Content Part
-For this example, you will use the `Map` part that is described in [Writing a content part](Writing-a-content-part). If you did not create the `Map` part, do so now. 
+# Crando un Content Part
+Para este ejemplo, usaremos el 'Map' creado en [creando un content part](Writing-a-content-part)
+. Si no has creado el 'Map', hazlo.
 
-# Turning a Part into a Widget
-To turn a content part into a widget, you must update the database with your widget's type definition. You do this by adding an `UpdateFrom&lt;version#&gt;` method to the part's _Migrations.cs_ file.
+# Convirtiendo un Part en un Widget
+Para convertir un content part en un widget, debes actualizar la base de datos con la definición del widget. Para hacer esto añade un método 'UpdateFrom1' en el fichero _Migrations.cs_ del part.
 
-The following example shows the `Map` part's _Migrations.cs_ file with the `UpateFrom1` method added.
-
+El siguiente ejemplo muestra el fichero _Migrations.cs del 'Map' part con el método 'UpdateFrom1' añadido.
     
     using System.Data;
     using Maps.Models;
@@ -53,17 +53,17 @@ The following example shows the `Map` part's _Migrations.cs_ file with the `Upat
     }
  
 
-In this example, the `UpdateFrom1` method creates `MapWidget` by combining `MapPart`, `WidgetPart`, and `CommonPart`, and then setting the widget stereotype. The `WidgetPart` and `CommonPart` objects are built into Orchard. The method returns 2, which is the new version number.
+En este ejemplo, el método 'UpdateFrom1' crea 'MapWidget' combinando 'MapPart', 'WidgetPart' y 'CommonPart' y con las opción estereotipo establecido como widget. El método devuelvo dos, es el nuevo número de versión.
 
-The part has now been transformed into a widget.
+El part ha sido ahora transformado en un widget.
 
-# Displaying the Widget
+# Mostrando el widget
 
-After you create the new widget, open the Orchard **Dashboard** and click **Widgets**. You can then select the layer and zone where you want to display the widget. The following image shows the **Manage Widgets** page.
+Después de crear el nuevo widget, abre el **Dashboard** de orchard y haz clic en **Widgets++. Puedes seleccionar la capa y zona en la que quieras que se muestre el widget. La siguiente imagen muestra la página **ManageWidgets**.
 
 ![](../Upload/screenshots_675/manage_widgets_675.png)
 
-For information about how to display your widget, see [Managing Widgets](Managing-widgets).
+Para más información sobre cómo mostrar tu widget, mira [Administrando Widgets](Managing-widgets).
 
-# Sharing Your Widget
-To share the widget with others or to upload it to the widget gallery, you first need to package you widget to a module _.zip_ file. This is done the same way any module is packaged in Orchard. For information, see [Packaging and sharing a module](Packaging-and-sharing-a-module).
+# Compartiendo tu widget
+Para compartir el widget con otros o subirlo a la galería, primero necesitas empaquetar tu widget en un módulo, que es un fichero _.zip. Se hace de la misma forma que empaquetar un módulo. Para más información, mira [Empaquetando y compartiendo un módulo](Packaging-and-sharing-a-module).
