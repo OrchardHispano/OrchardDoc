@@ -2,7 +2,7 @@
 
 En Orchard, un _widget_ es un trozo de interfaz de usuario reutilizable que puede ser arbitrariamente colocada en las páginas de un sitio web. Ejemplos de widgets podrían ser una nube de etiquetas, un buscador, o un feed de Twitter. Un widget es un Content Type, lo que le permite reutilizar el código y la interfaz de usuario.
 
-En este artículo se describe cómo escribir un widget creando primero un ContentPart y luego convertiéndola en un widget.
+En este artículo se describe cómo escribir un widget creando primero un ContentPart y luego convertiéndolo en un widget.
 
 # Crando un Content Part
 Para este ejemplo, usaremos el 'Map' creado en [creando un content part](Writing-a-content-part)
