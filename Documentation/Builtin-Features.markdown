@@ -57,7 +57,7 @@ Esta part está desfasada ya que las proyecciones ahora permiten filtrar y orden
 
 Este módulo principal crea la infraestructura para content types personalizados (tipos de contenido personalizados).
 
-### Features
+### Características
 
 * Contents (Core): la infraestructura para tipos personalizados (custom types).
 * Content Control Wrapper (desactivado por defecto): añade un botón de editar en el front-end.
@@ -221,51 +221,43 @@ Activa este módulo para permitir la creación y modificación de tipos de conte
 
 ## Orchard.CustomForms (WebPI, desactivado por defecto)
 
-Custom forms are built as content types, typically using fields. Once you've built the content
-type for your custom form, you can enable its instances to be created from the front-end by
-anonymous users.
+Los formularios personalizados (custom forms) están construidos como tipos de contenido, normalmente usando campos (fields).
+Una vez has construido el content type para tu formulario personalizado, puedes activar sus instancias para ser creadas en el front-end por usuarios anónimos.
 
-This is useful, for example, to create contact forms: enable the feature, create a "Contact Form"
-content type, add name, e-mail and message text fields (select TextArea as the display option in the
-field's settings), click on "Forms" in the admin menu, click "Add a new  Custom Form", 
-select "Contact Us" as the content type for the form and publish. If you enables the Rules feature,
-you can then create a rule that sends an e-mail when an item of the "Contact Us" type is
-published. You should also grant the "Submit Contact Form" permission to the anonymous role
-from the Users/Roles admin screen under "Custom Forms" in order to allow anonymous users to post contact forms.
+Esto es útil, por ejemplo, para crear formularios de contacto: activa la característica, crea un tipo de contenido "Formulario de Contacto", añade los campos de texto de nombre, e-mail y mensaje (selecciona TextArea como opción de vista en la configuración de campo), haz click en "Formularios" en el menú de administración, haz click en "Añadir un nuevo formulario personalizado", selecciona "Contact Us" como el tipo de contenido para el formulario y publícalo. Si activas la característica Rules, puedes crear una norma que envía un e-mail cuando un ítem del tipo "Contact Us" es publicada. Deberías también garantizar el permiso "Submit Contact Form" a role anónimo desde la pantalla de administración "Usuarios/Roles", bajo "Formularios personalizados" de manera que permitas a los usuarios anónimos enviar formularios de contacto.
 
 ## Orchard.DesignerTools
 
-This module contains a few features that help with the development of themes.
+Este módulo contiene algunas características que ayudan con el desarrollo de temas.
 
-### Features
+### Características
 
-* Shape Tracing: provides a Firebug-like tool that can be used to explore the server-side shape structure of the page, generate alternates, and inspect the model, placement and templates for any shape.
-* URL Alternates: adds alternates for all shapes based on the current URL, of the form "someshape-url-thecurrenturl" or "someshape-url-homepage".
-* Widget Alternates: adds alternates for specific widgets and layers.
+* Shape Tracing: proporciona una aplicación al estilo de Firebug que puede usarse para explorar la estructura shape del lado del servidor de una página, genera alternativas, e inspecciona el modelo, la ubicación y las plantillas para cada shape.
+* URL Alternates: añade alternativas para todos los shapes basados en la URL actual, de la forma "algunshape-url-laurlactual" o "algunshape-url-homepage".
+* Wdidget Alternates: añade alternativas para widgets y capas específicos.
 
 ### Ver También:
 
-* [Customizing Orchard using designer helper tools][31]
+* [Personalizar Orchard usando las herramientas de ayuda al desarrollador][31]
 
-This module is available from source code packages or [from the gallery][32].
+El módulo DesignerTools está disponible desde los paquetes de código fuente o [desde la galería][32].
 
 ## Orchard.Email
 
-This module implements an email messaging channel that can be used for example to send
-email notifications from rules.
+Este módulo implementa un canal de envío de mensajes por e-mail que puede ser usado para enviar notificaciones de correo desde las normas (rules).
 
-This module is available from source code packages or [from the gallery][38].
+El módulo Email está disponible desde los paquetes de código fuente o [desde la galería][38].
 
 ## Orchard.Fields (WebPI)
 
-Orchard.Fields provides Input, Boolean, DateTime, Numeric, Link, Enumeration, and Media Picker fields
-that can be used in custom content types.
+Orchard.Fields proporciona campos de input, booleano, fecha, numérico, enlace, enumeración y selector de medios.
 
 ## Orchard.Forms (WebPI)
 
 This developer-targeted module provides shapes that are useful to dynamically build forms from code.
+Este módulo destinado a desarrolladores proporciona shapes que son útiles para construir formularios dinámicamente desde código.
 
-This module is used as a dependency by Projector and Rules.
+Los módulos Projector y Rules dependen de Orchard.Forms
 
 ## Orchard.ImportExport
 
@@ -326,7 +318,7 @@ This module is available from source code packages or [from the gallery][39].
 
 ## Orchard.Modules (WebPI)
 
-This is the module that provides the admin UI to enable and disable features.
+This is the module that provides the admin UI to enable and disable Características.
 
 ### Ver También
 
@@ -350,7 +342,7 @@ This module is available from source code packages or [from the gallery][41].
 
 This module handles the packaging of themes and modules.
 
-### Features
+### Características
 
 * Packaging commands: core services and command-line commands to package and install modules.
 * Gallery: integrates the [gallery][1] into Orchard.
@@ -427,7 +419,7 @@ as simple script expressions. The scripting infrastructure is language-agnostic,
 new languages could be added by a module. Orchard comes with one implementation that
 is a simple expression language whose syntax is a subset of Ruby.
 
-### Features
+### Características
 
 * Scripting: the scripting infrastructure.
 * Lightweight Scripting: a simple expression language that is a subset of Ruby.
@@ -504,7 +496,7 @@ as soon as possible even if the application is not entirely done warming up.
 Widgets are reusable pieces of UI that can be positioned on any page of the site. Which widgets
 get displayed on what pages is determined by layer rules.
 
-### Features
+### Características
 
 * Widgets: the core widget feature and admin UI.
 * Page Layer Hinting: adds a message when publishing a new page that prompts the user to create a new layer for that page.
@@ -517,7 +509,7 @@ get displayed on what pages is determined by layer rules.
 
 ## TinyMCE (WebPI)
 
-Used as a dependency by other features, this provides the scripts necessary to implement the TinyMCE WYSYWYG HTML editor.
+Used as a dependency by other Características, this provides the scripts necessary to implement the TinyMCE WYSYWYG HTML editor.
 
 ## UpgradeTo15 / UpgradeTo14 (WebPI, desactivado por defecto)
 
