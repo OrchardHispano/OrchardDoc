@@ -254,18 +254,16 @@ Orchard.Fields proporciona campos de input, booleano, fecha, numérico, enlace, 
 
 ## Orchard.Forms (WebPI)
 
-This developer-targeted module provides shapes that are useful to dynamically build forms from code.
 Este módulo destinado a desarrolladores proporciona shapes que son útiles para construir formularios dinámicamente desde código.
 
 Los módulos Projector y Rules dependen de Orchard.Forms
 
 ## Orchard.ImportExport
 
-The definition for content types, as well as the content itself, can be exported from one Orchard
-instance, and imported into another using this module. The format that is used for the transfer
-is the same XML format that is used in recipes.
+Este módulo permite exportar e importar la definición de tipos de contenido, así como también el contenido en sí mismo entre dos instancias de Orchard.
+El formato que es usado para transferir la información es el mismo formato XML que es usado en los recipes.
 
-This module is available from source code packages or [from the gallery][33].
+El módulo ImportExport está disponible desde los paquetes de código fuente o [desde la galería][33].
 
 ## Orchard.Indexing, Orchard.Search and Lucene
 
@@ -276,6 +274,14 @@ The search index queries the index and formats results.
 
 This module is available from source code packages or from the gallery: [search][34],
 [indexing][35] and [Lucene][36].
+
+Estos tres módulos forman la infraestructura por defecto para las búsquedas de full-text en Orchard.
+El módulo Indexing agrega información al índice de búsquedas extrayéndola de los ítems de contenido.
+El módulo Lucene proporciona la implementación del índice de búsqueda que usa el módulo Indexing y que realiza consultas de búsqueda.
+El módulo Search busca en el índice y da formato a los resultados.
+
+Estos módulos están disponibles desde los paquetes de código fuente o desde la galería: [Search][34],
+[Indexing][35] and [Lucene][36].
 
 ## Orchard.jQuery (WebPI)
 
