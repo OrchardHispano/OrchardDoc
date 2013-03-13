@@ -267,52 +267,43 @@ El módulo ImportExport está disponible desde los paquetes de código fuente o 
 
 ## Orchard.Indexing, Orchard.Search and Lucene
 
-Those three modules constitute the default full-text search infrastructure for Orchard.
-The indexing module populates the index from content items. The Lucene module provides
-the specific index implementation that indexing populates and that search queries.
-The search index queries the index and formats results.
-
-This module is available from source code packages or from the gallery: [search][34],
-[indexing][35] and [Lucene][36].
-
 Estos tres módulos forman la infraestructura por defecto para las búsquedas de full-text en Orchard.
 El módulo Indexing agrega información al índice de búsquedas extrayéndola de los ítems de contenido.
 El módulo Lucene proporciona la implementación del índice de búsqueda que usa el módulo Indexing y que realiza consultas de búsqueda.
 El módulo Search busca en el índice y da formato a los resultados.
 
 Estos módulos están disponibles desde los paquetes de código fuente o desde la galería: [Search][34],
-[Indexing][35] and [Lucene][36].
+[Indexing][35] y [Lucene][36].
 
 ## Orchard.jQuery (WebPI)
 
-Used as a dependency by other modules, this provides jQuery and jQueryUI scripts.
+Este módulo proporciona los scripts de jQuery y de jQueryUI. Otros módulos lo usan como dependencia.
 
-## Orchard.Lists (deprecated)
 
-This module provides a simple implementation for lists of content items, following
-a folder/file metaphor where a content item can belong to only one list.
+## Orchard.Lists (desfasado)
 
-This module is deprecated and we recommend users switch to Taxonomies and Projections,
-which enable much richer scenarios.
+Este módulo sirve una implementación sencilla para las listas de ítems de contenido, siguiendo una relación carpeta/archivo donde un ítem de contenido solo puede pertenecer a una lista.
+
+Este módulo está desfasado y recomendatos a los usuarios cambiarlo por Taxonomies y Projections, que permiten  una mayor amplitud de escenarios y usos.
 
 ## Orchard.Localization
 
-This module provides a part that can be added to a content type to make it localizable.
-The items of the modified types can have several versions that differ by culture.
+Este módulo proporciona un part que puede ser añadido a un tipo de contenido para hacerlo localizable.
+Los ítems de los tipos podificados pueden tener varias versiones que difieron por la cultura.
 
-This module is available from source code packages or [from the gallery][37].
+Este módulo está disponible desde los paquetes de código fuente o desde la [galería][37].
 
 ## Orchard.Media (WebPI)
 
-Orchard.Media manages the contents of the /media folder.
+Orchard.Media administra el contenido de la carpeta /media.
 
 ### Ver También
 
-* [Adding and managing media content][10]
+* [Añadir y administrar contenido multimedia][10]
 
 ## Orchard.MediaPicker (WebPI)
 
-MediaPicker adds the media picker to the content body editor.
+MediaPicker añade el selector de medios al editor del content body.
 
 ## Orchard.Messaging
 
